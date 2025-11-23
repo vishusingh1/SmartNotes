@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const client = new OpenAI({
-  apiKey: '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',
+  apiKey: process.env.OPENAI_API_KEY!,
 });
 
 export const AIService = {

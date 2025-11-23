@@ -9,7 +9,7 @@ export default function Note() {
     const params = useParams();
     const id = params?.id;
     console.log("note id os:", id)
-    const [note, setNote] = useState<Note | null>(null);
+    // const [note, setNote] = useState<Note | null>(null);
     const [updateTitle, setUpdateTitle] = useState("");
     const [updateContent, setUpdateContent] = useState("");
     const [updateSummary, setUpdateSummary] = useState("");
@@ -30,7 +30,7 @@ export default function Note() {
         if (!id) return;
 
         NotesAPI.getOne(Number(id)).then((data) => {
-            setNote(data);
+            // setNote(data);
             setUpdateTitle(data.title);
             setUpdateContent(data.content);
             setUpdateSummary(data.summary || "");

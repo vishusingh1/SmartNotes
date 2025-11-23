@@ -1,6 +1,6 @@
 import { apiDelete, apiGet, apiGetOne, apiPost, apiUpdate } from "./apiClient";
 import type { NoteInput } from "../types/note";
-import { data } from "react-router-dom";
+// import { data } from "react-router-dom";
 
 export const NotesAPI = {
   getAll: () => apiGet("/notes"),

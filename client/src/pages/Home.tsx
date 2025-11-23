@@ -3,7 +3,7 @@ import { NotesAPI } from "../api/notes.api";
 import type { Note } from "../types/note";
 import NoteCard from "../components/NoteCard";
 import { useNavigate } from "react-router-dom";
-import Masonry from "react-masonry-css";
+
 
 
 export default function Home() {
