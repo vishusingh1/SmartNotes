@@ -1,7 +1,7 @@
 // import { join } from "path";
 // import { json } from "stream/consumers";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://smartnotes-v75a.onrender.com/api";
 
 export async function apiGet(path: string) {
   const res = await fetch(`${BASE_URL}${path}`);
